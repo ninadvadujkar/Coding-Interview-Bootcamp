@@ -17,6 +17,29 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+    for(let i = 0; i < n; i++) {
+        let str = '';
+        for(let j = 0; j <= i; j++) {
+            str += '#';
+        }
+        for(let k = i+1; k < n; k++) {
+            str += ' ';
+        }        
+        console.log(str);
+    }
+    // Instructor's soln
+    // for(let row = 0; row < n; row++) {
+    //     let stair = '';
+    //     for(let column = 0; column < n; column++) {
+    //         if(column <= row) {
+    //             stair += '#';
+    //         } else {
+    //             stair += ' ';
+    //         }
+    //     }
+    //     console.log(stair);
+    // }
+}
 
 module.exports = steps;
